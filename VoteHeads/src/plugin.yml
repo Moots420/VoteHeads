@@ -1,0 +1,21 @@
+name: VoteHeads
+main: dev.moots.VoteHeads.VoteHeads
+version: 1.0
+api-version: 1.16
+aurthor: Moots420
+website: Moots.Dev
+commands:
+    VHGet:
+        description: Checks top monthly voters.
+        usage: /vhget <amount>
+        permission: voteheads.vhget
+        permission-message: You do not have Permission.
+  
+permissions:
+    voteheads.*:
+        description: All voteheads permissions
+        children:
+            voteheads.vhget: true
+    voteheads.vhget:
+        description: Allows user to run getheads.
+        
